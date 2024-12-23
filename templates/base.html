@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gin + HTMX App</title>
+    <script src="https://unpkg.com/htmx.org@1.7.0"></script>
+</head>
+<body>
+    <h1>Welcome to My HTMX + Gin App!</h1>
+
+    <!-- HTMX Dynamic Content Area -->
+    <div hx-get="/dynamic-content" hx-target="#dynamic-content" hx-trigger="click">
+        <button>Load Dynamic Content</button>
+    </div>
+
+    <div id="dynamic-content"></div>
+</body>
+</html>
