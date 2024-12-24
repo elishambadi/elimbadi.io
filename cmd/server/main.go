@@ -1,19 +1,31 @@
 package main
 
 import (
-    "fmt"
     "net/http"
+    "github.com/gin-gonic/gin"
 )
 
 func main() {
-    http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
-        fmt.Fprintln(w, "Hello, GOTH!")
+    r := gin.Default()
+
+    // Load HTML files from templates folder
+    r.LoadHTMLGlob("/app/templates/*")
+
+    r.Static("/assets", "/app/assets")
+
+
+    // Serve the base HTML
+    r.GET("/", func(c *gin.Context) {
+        c.HTML(http.StatusOK, "base.html", nil)
     })
 
-    http.HandleFunc("/home", func(w http.ResponseWriter, r *http.Request) {
-        fmt.Fprintln(w, "Welcome home. Still work in progress!")
+    // Serve dynamic content for HTMX
+    r.GET("/content", func(c *gin.Context) {
+        c.HTML(http.StatusOK, "content.html", gin.H{
+            "Message": "Hello from HTMX-powered dynamic content!",
+        })
     })
 
-    fmt.Println("Server running on http://localhost:8000")
-    http.ListenAndServe(":8000", nil)
+    // Start the server on port 8000
+    r.Run(":8000")
 }
