@@ -22,3 +22,4 @@ go install github.com/a-h/templ/cmd/templ@latest
 sudo apt update
 sudo apt install postgresql postgresql-contrib
 
+go install github.com/sqlc-dev/sqlc/cmd/sqlc@latest
