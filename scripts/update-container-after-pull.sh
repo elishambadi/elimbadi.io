@@ -1,13 +1,13 @@
 #!/bin/bash
 
 # Define variables
-GIT_REPO_DIR="/home/stone/Documents/elimbadi.io"   # Path to your Git repository
+GIT_REPO_DIR="/root/Documents/elimbadi.io"   # Path to your Git repository
 BRANCH_NAME="main"                            # The Git branch you are working on
 IMAGE_NAME="my-go-app"                        # The name of your Docker image
 CONTAINER_NAME="go-deployment"              # The name of your Docker container
 HOST_PORT="8000"                              # Host port to expose
 CONTAINER_PORT="8000"                         # Container port
-DOCKERFILE_DIR="/home/stone/Documents/elimbadi.io"     # Path to the Dockerfile directory (or current directory)
+DOCKERFILE_DIR="/root/Documents/elimbadi.io"     # Path to the Dockerfile directory (or current directory)
 
 # Navigate to the Git repository
 cd "$GIT_REPO_DIR" || exit
