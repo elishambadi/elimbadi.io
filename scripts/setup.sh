@@ -14,3 +14,11 @@ nvm install --lts
 
 npm install -D tailwindcss
 npx tailwindcss init
+
+# install templ - templating for go htmls
+go install github.com/a-h/templ/cmd/templ@latest
+
+# install postgres
+sudo apt update
+sudo apt install postgresql postgresql-contrib
+

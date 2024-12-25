@@ -1,6 +1,7 @@
 # Step 1: Use the official Golang image to build your app
 FROM golang:1.20-alpine AS builder
 
+# install node and npm
 RUN apk add --no-cache nodejs npm
 
 # Step 2: Set the working directory inside the container
