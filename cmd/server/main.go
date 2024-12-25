@@ -17,7 +17,7 @@ func main() {
 	r := gin.Default()
 
 	// Load HTML files from templates folder
-	r.Static("/assets", "./assets")
+	r.Static("/assets", "/app/assets")
 
 	r.SetTrustedProxies(nil)
 
