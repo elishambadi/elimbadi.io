@@ -6,7 +6,6 @@ toolchain go1.23.2
 
 require (
 	github.com/a-h/templ v0.2.793
-	github.com/a-h/templ/examples/integration-gin v0.0.0-20241223105034-c36a9e1338f1
 	github.com/gin-gonic/gin v1.10.0
 )
 
