@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elisha Mbadi | Welcome to my World</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.1/font/bootstrap-icons.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #2D3748;
+            --secondary: #4A5568;
+            --accent: #38B2AC;
+            --light: #F7FAFC;
+            --dark: #1A202C;
+            --code-bg: #EDF2F7;
+        }
+        
+        body {
+            font-family: 'Courier New', monospace;
+            background-color: var(--light);
+            color: var(--dark);
+            line-height: 1.6;
+        }
+        
+        .navbar {
+            background-color: var(--dark);
+            padding: 1rem 0;
+        }
+        
+        .navbar-brand, .nav-link {
+            color: var(--light) !important;
+            font-weight: 600;
+        }
+        
+        .nav-link:hover {
+            color: var(--accent) !important;
+        }
+        
+        .hero-section {
+            padding: 5rem 0;
+            background-color: var(--dark);
+            color: var(--light);
+        }
+        
+        .hero-text {
+            border-left: 4px solid var(--accent);
+            padding-left: 1rem;
+        }
+        
+        .section-title {
+            display: inline-block;
+            border-bottom: 3px solid var(--accent);
+            padding-bottom: 0.5rem;
+            margin-bottom: 2rem;
+            font-weight: 700;
+        }
+        
+        .card {
+            border: none;
+            border-radius: 0;
+            background-color: white;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .card-title {
+            color: var(--primary);
+            font-weight: 700;
+        }
+        
+        .code-block {
+            background-color: var(--code-bg);
+            border-left: 4px solid var(--accent);
+            padding: 1rem;
+            margin-bottom: 1rem;
+            font-family: 'Courier New', monospace;
+            overflow-x: auto;
+        }
+        
+        .tech-tag {
+            display: inline-block;
+            background-color: var(--code-bg);
+            border: 1px solid #CBD5E0;
+            border-radius: 3px;
+            padding: 0.2rem 0.6rem;
+            margin-right: 0.5rem;
+            margin-bottom: 0.5rem;
+            font-size: 0.85rem;
+            font-family: 'Courier New', monospace;
+        }
+        
+        .footer {
+            background-color: var(--dark);
+            color: var(--light);
+            padding: 2rem 0;
+            margin-top: 3rem;
+        }
+        
+        .btn-custom {
+            background-color: var(--accent);
+            border: none;
+            color: white;
+            padding: 0.5rem 1.5rem;
+            border-radius: 2px;
+        }
+        
+        .btn-custom:hover {
+            background-color: var(--primary);
+            color: white;
+        }
+        
+        .btn-outline-custom {
+            border: 2px solid var(--accent);
+            color: var(--accent);
+            background: transparent;
+            padding: 0.5rem 1.5rem;
+            border-radius: 2px;
+        }
+        
+        .btn-outline-custom:hover {
+            background-color: var(--accent);
+            color: white;
+        }
+        
+        .book-card {
+            height: 100%;
+            border-left: 3px solid var(--accent);
+        }
+        
+        .terminal-window {
+            border-radius: 5px;
+            background-color: var(--dark);
+            color: var(--light);
+            padding: 1.5rem;
+            font-family: 'Courier New', monospace;
+            position: relative;
+            margin: 2rem 0;
+        }
+        
+        .terminal-header {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 25px;
+            background-color: var(--secondary);
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            padding: 0 8px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .terminal-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            margin-right: 6px;
+            background-color: #FF5F56;
+        }
+        
+        .terminal-dot:nth-child(2) {
+            background-color: #FFBD2E;
+        }
+        
+        .terminal-dot:nth-child(3) {
+            background-color: #27C93F;
+        }
+        
+        .terminal-body {
+            margin-top: 25px;
+            padding-top: 10px;
+        }
+        
+        .cursor {
+            display: inline-block;
+            width: 8px;
+            height: 16px;
+            background-color: var(--accent);
+            animation: blink 1s infinite;
+            vertical-align: middle;
+        }
+        
+        @keyframes blink {
+            0% { opacity: 0; }
+            50% { opacity: 1; }
+            100% { opacity: 0; }
+        }
+        
+        .terminal-line {
+            margin-bottom: 0.5rem;
+        }
+        
+        .comment {
+            color: #63B3ED;
+        }
+        
+        .command {
+            color: #68D391;
+        }
+        
+        .path {
+            color: #F6AD55;
+        }
+        
+        .function {
+            color: #B794F4;
+        }
+        
+        .string {
+            color: #F56565;
+        }
+        
+        .section {
+            padding: 4rem 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#">elisha@mbadi:~$</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#reading">Reading</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://github.com/elishamadi" target="_blank">
+                            <i class="bi bi-github"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <div class="hero-text">
+                        <h1>Hello, I'm Elisha Mbadi</h1>
+                        <p class="lead">Backend Developer | System Architect | IT Strategist & Innovator</p>
+                    </div>
+                    <div class="terminal-window mt-4">
+                        <div class="terminal-header">
+                            <div class="terminal-dot"></div>
+                            <div class="terminal-dot"></div>
+                            <div class="terminal-dot"></div>
+                        </div>
+                        <div class="terminal-body">
+                            <div class="terminal-line">
+                                <span class="path">elisha@mbadi:~$</span> 
+                                <span class="command">whoami</span>
+                            </div>
+                            <div class="terminal-line">
+                                Backend developer with expertise in scalable systems.
+                            </div>
+                            <div class="terminal-line">
+                                <span class="path">elisha@mbadi:~$</span> 
+                                <span class="command">ls -la ./skills</span>
+                            </div>
+                            <div class="terminal-line">
+                                <span class="function">APIs</span> <span class="function">Databases</span> <span class="function">Cloud</span> <span class="function">DevOps</span> <span class="function">Design</span>
+                            </div>
+                            <div class="terminal-line">
+                                <span class="path">elisha@mbadi:~$</span> 
+                                <span class="cursor"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section" id="projects">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <div class="code-block mb-4">
+                <span class="comment">// List of my recent projects</span><br>
+                <span class="function">const</span> myProjects = [<br>
+                &nbsp;&nbsp;{ name: <span class="string">"AS-Study Hub"</span>, description: <span class="string">"PDF sharing platform"</span> },<br>
+                &nbsp;&nbsp;{ name: <span class="string">"PYC Warmup"</span>, description: <span class="string">"Choir training site"</span> },<br>
+                &nbsp;&nbsp;{ name: <span class="string">"Chui Labs"</span>, description: <span class="string">"Tech Strategy consulting"</span> }<br>
+                &nbsp;&nbsp;{ name: <span class="string">"<a target="_blank" href="https://portfolio.elimbadi.com">portfolio.elimbadi</a>"</span>, description: <span class="string">"Professional portfolio"</span> }<br>
+                ];
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <i class="bi bi-file-earmark-pdf"></i> AS-Study Hub
+                            </h5>
+                            <p class="card-text">A scalable backend system for PDF sharing and collaborative learning.</p>
+                            <div class="mb-3">
+                                <span class="tech-tag">VueJS</span>
+                                <span class="tech-tag">Django</span>
+                                <span class="tech-tag">S3</span>
+                            </div>
+                            <a href="https://as.elimbadi.com" target="_blank" class="btn btn-outline-custom">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <i class="bi bi-music-note-beamed"></i> PYC Warmup
+                            </h5>
+                            <p class="card-text">RESTful API and authentication system for a choir training system.</p>
+                            <div class="mb-3">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Django</span>
+                                <span class="tech-tag">PostgreSQL</span>
+                            </div>
+                            <a href="https://pyc.elimbadi.com" target="_blank" class="btn btn-outline-custom">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <i class="bi bi-laptop"></i> Chui Labs
+                            </h5>
+                            <p class="card-text">Technology Strategy Consulting.</p>
+                            <div class="mb-3">
+                                <span class="tech-tag">TOGAF</span>
+                                <span class="tech-tag">AI Impact</span>
+                                <span class="tech-tag">RPA</span>
+                            </div>
+                            <a href="https://chui-labs.elimbadi.com" target="_blank" class="btn btn-outline-custom">View Project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section bg-light" id="skills">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="code-block">
+                <span class="comment">// Core backend technologies</span><br>
+                <span class="function">const</span> backendSkills = {<br>
+                &nbsp;&nbsp;languages: [<span class="string">"Python"</span>, <span class="string">"Go"</span>, <span class="string">"Elixir"</span>, <span class="string">"PHP"</span>],<br>
+                &nbsp;&nbsp;databases: [<span class="string">"PostgreSQL"</span>, <span class="string">"MongoDB"</span>, <span class="string">"Redis"</span>],<br>
+                &nbsp;&nbsp;cloud: [<span class="string">"AWS"</span>],<br>
+                &nbsp;&nbsp;devOps: [<span class="string">"Docker"</span>, <span class="string">"K8s"</span>, <span class="string">"CI/CD"</span>, <span class="string">"Terraform"</span>]<br>
+                };
+            </div>
+            
+            <div class="row mt-4">
+                <div class="col-md-6">
+                    <h5><i class="bi bi-code-slash"></i> Backend Development</h5>
+                    <ul class="list-unstyled">
+                        <li>• RESTful API Design & Development</li>
+                        <li>• Microservices Architecture</li>
+                        <li>• Authentication & Authorization</li>
+                        <li>• Performance Optimization</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <h5><i class="bi bi-database"></i> Database Engineering</h5>
+                    <ul class="list-unstyled">
+                        <li>• Schema Design</li>
+                        <li>• Query Optimization</li>
+                        <li>• Data Migration</li>
+                        <li>• Replication & Sharding</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <h5><i class="bi bi-cloud"></i> Cloud & DevOps</h5>
+                    <ul class="list-unstyled">
+                        <li>• Serverless Architecture</li>
+                        <li>• Container Orchestration</li>
+                        <li>• Infrastructure as Code</li>
+                        <li>• CI/CD Pipeline Design</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <h5><i class="bi bi-shield-check"></i> Security & Performance</h5>
+                    <ul class="list-unstyled">
+                        <li>• OWASP Security Practices</li>
+                        <li>• Rate Limiting & Caching</li>
+                        <li>• Load Testing & Scaling</li>
+                        <li>• Data Encryption</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reading Section -->
+    <section class="section" id="reading">
+        <div class="container">
+            <h2 class="section-title">Currently Reading</h2>
+            <div class="code-block mb-4">
+                <span class="comment">// Books that shape my thinking and skills</span><br>
+                <span class="function">function</span> getCurrentlyReading() {<br>
+                &nbsp;&nbsp;<span class="function">return</span> [<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;<span class="string">"Clean Architecture"</span>,<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;<span class="string">"System Design Interview"</span><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;<span class="string">"The Diary of a CEO"</span>,<br>
+                &nbsp;&nbsp;];<br>
+                }
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card book-card">
+                        <div class="card-body">
+                            <h5 class="card-title">Clean Architecture</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">by Robert C. Martin</h6>
+                            <p class="card-text">A craftsman's guide to software structure and design focusing on maintainability at scale.</p>
+                            <div class="tech-tag">Software Design</div>
+                            <div class="tech-tag">Best Practices</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card book-card">
+                        <div class="card-body">
+                            <h5 class="card-title">System Design Interview</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">by Alex Xu</h6>
+                            <p class="card-text">An insider's guide to understanding and designing scalable distributed systems.</p>
+                            <div class="tech-tag">System Design</div>
+                            <div class="tech-tag">Scalability</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card book-card">
+                        <div class="card-body">
+                            <h5 class="card-title">The Diary of a CEO</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">by Steven Bartlett</h6>
+                            <p class="card-text">A deep dive into the emotional and psychological patterns that shape successful lives, careers, and relationships.</p>
+                            <div class="tech-tag">Self-Development</div>
+                            <div class="tech-tag">Leadership</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section bg-light" id="contact">
+        <div class="container">
+            <h2 class="section-title">Connect</h2>
+            <div class="code-block mb-4">
+                <span class="comment">// How to reach me</span><br>
+                <span class="function">const</span> contact = {<br>
+                &nbsp;&nbsp;email: <span class="string">"embadi43@gmail.com"</span>,<br>
+                &nbsp;&nbsp;github: <span class="string">"https://github.com/elishambadi"</span>,<br>
+                &nbsp;&nbsp;blog: <span class="string">"https://medium.com/@embadi43"</span><br>
+                };
+            </div>
+            
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <p class="lead">Interested in working together or have questions?</p>
+                            <a href="mailto:embadi43@gmail.com" class="btn btn-custom me-2">
+                                <i class="bi bi-envelope"></i> Email Me
+                            </a>
+                            <a href="https://github.com/elishambadi" class="btn btn-outline-custom" target="_blank">
+                                <i class="bi bi-github"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container text-center">
+            <p>
+                <span class="path">elisha@mbadi:~$</span> 
+                <span class="command">echo</span> 
+                <span class="string">"© 2025 | Built with code, coffee and claude."</span>
+            </p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle with Popper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
