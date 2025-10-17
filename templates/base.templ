@@ -19,7 +19,7 @@ templ Base() {
 			<link rel="icon" type="image/png" href="/assets/img/favicon.png"/>
 			<meta name="theme-color" content="#5540af"/>
 			<meta property="og:site_name" content="Atom Template"/>
-			<meta property="og:image" content="//assets/img/social.jpg"/>
+			<meta property="og:image" content="/assets/img/social.jpg"/>
 			<meta name="twitter:card" content="summary_large_image"/>
 			<meta name="twitter:site" content="@tailwindmade"/>
 			<link crossorigin="crossorigin" href="https://fonts.gstatic.com" rel="preconnect"/>
@@ -42,23 +42,22 @@ templ Base() {
 			<div id="main" class="relative">
 				<div
 					x-data="{
-        triggerNavItem(id) {
-            $scroll(id)
-        },
-        triggerMobileNavItem(id) {
-            mobileMenu = false;
-            this.triggerNavItem(id)
-        }
-    }"
+						triggerNavItem(id) {
+							$scroll(id)
+						},
+						triggerMobileNavItem(id) {
+							mobileMenu = false;
+							this.triggerNavItem(id)
+						}
+					}"
 				>
 					<div
-						class="w-full z-50 top-0 py-3 sm:py-5  absolute
-    "
+						class="w-full z-50 top-0 py-3 sm:py-5  absolute"
 					>
 						<div class="container flex items-center justify-between">
 							<div>
 								<a href="/">
-									<img src="/assets/img/logo-festive.png" class="w-24 lg:w-48" alt="logo image"/>
+									<img src="/assets/img/logo.png" class="w-24 lg:w-48" alt="logo image"/>
 								</a>
 							</div>
 							<div class="hidden lg:block">
@@ -217,9 +216,6 @@ templ Base() {
 												<a href="https://www.linkedin.com/in/elisha-mbadi-4b1693165/" class="pl-4">
 													<i class="bx bxl-linkedin text-2xl text-white hover:text-yellow"></i>
 												</a>
-												<a href="https://www.instagram.com/eli_mbadi/" class="pl-4">
-													<i class="bx bxl-instagram text-2xl text-white hover:text-yellow"></i>
-												</a>
 											</div>
 										</div>
 									</div>
@@ -265,9 +261,6 @@ templ Base() {
                                         </a> -->
                                             <a href="https://www.linkedin.com/in/elisha-mbadi-4b1693165/" class="pl-4">
                                                 <i class="bx bxl-linkedin text-2xl text-white hover:text-yellow"></i>
-                                            </a>
-                                            <a href="https://www.instagram.com/eli_mbadi/" class="pl-4">
-                                                <i class="bx bxl-instagram text-2xl text-white hover:text-yellow"></i>
                                             </a>
                                         </div>
 									</div>
@@ -342,11 +335,9 @@ templ Base() {
 											Web Development
 										</h3>
 										<p class="text-grey pt-4 text-sm group-hover:text-white md:text-base">
-											Looking to develop a digital prescence and make sales online and generate leads online?
-                                            I will help you find out what kind of web solution you need and design & build for you a 
-                                            modern, responsive website with good UI/UX and efficient backends. <br/>
-                                            In this modern era, all businesses should be able to leverage the opportunity provided by the internet,
-                                            let us help you.
+											Building responsive and scalable web applications using modern frameworks
+											and technologies. From front-end design to back-end development, I create
+											seamless user experiences to achieve your business goals.
 										</p>
 									</div>
 								</div>
@@ -368,8 +359,7 @@ templ Base() {
 										<p class="text-grey pt-4 text-sm group-hover:text-white md:text-base">
 											There are over 1 billion users on Google every day. Search Engine Optimization allows you to access
                                             the most interested clients and get more leads. By building SEO optimized web pages, I will help you get
-                                            more organic viewers to your site. <br/>
-                                            Whether you are in online business, or milk-delivery business, our SEO strategies will help you get your best customers.
+                                            more organic viewers to your site.
 										</p>
 									</div>
 								</div>
@@ -389,10 +379,8 @@ templ Base() {
 											Growth Consulting
 										</h3>
 										<p class="text-grey pt-4 text-sm group-hover:text-white md:text-base">
-											Your company needs to get your first 100 users, then next 1000 and next 10000. This effort is a combination
-                                            of marketing, product management and distribution efforts. We will help you look at the best ways to approach
-                                            your client base, and get growing. <br/>
-                                            Start growing.
+											Your company needs to get your first 100 users, then next 1000 and next 10000. Using AI, product design and growth hacking techniques, we will help you look at the best ways to approach
+                                            your client base, and get growing.
 										</p>
 									</div>
 								</div>
@@ -414,8 +402,7 @@ templ Base() {
 										<p class="text-grey pt-4 text-sm group-hover:text-white md:text-base">
 											A smooth engine is key to a running car. DevOps ensures best practices for your application during
                                             growth and expansion to ensure you are always running smoothly. This includes distributing servers for fault tolerance,
-                                            improving release pipelines and integrating feedback regularly. <br/>
-                                            I will help you build and grow smoothly.
+                                            improving release pipelines and integrating feedback regularly.
 										</p>
 									</div>
 								</div>
@@ -436,7 +423,7 @@ templ Base() {
 										</h3>
 										<p class="text-grey pt-4 text-sm group-hover:text-white md:text-base">
 											Blockchain for identity, payments and asset tokenization. Web3 is defining the future of asset ownership.
-                                            Learn how you can integrate digital assets into your application.
+                                            Learn how you can integrate digital assets & tokenization into your ecosystem.
 										</p>
 									</div>
 								</div>
@@ -619,16 +606,55 @@ templ Base() {
 												<i class="bx bxs-right-arrow hidden text-primary md:block"></i>
 												<div class="md:-mt-1 md:pl-8">
 													<span class="block font-body font-bold text-grey-40">
-														Mar 2023 - Present
+														Mar 2023 - May 2025
 													</span>
 													<span
 														class="block pt-2 font-header text-xl font-bold uppercase text-primary"
 													>
-														Software Engineer
+														Founding Engineer & SEO Expert
 													</span>
 													<div class="pt-2">
 														<span class="block font-body text-black">
-															Designing, Implementing and Maintaining Software Solutions. Performing Search Engine Optimization for built products. Worked with Laravel, Python, Semrush and MySQL database. Gained 1K daily users. Head of DevOps and innovation.
+															Built a nursing education ecosystem using Laravel, Python & MySQL. <br/> Gained 5k+ users and 1M+ SEO impressions. <br/> Head of emerging DevOps and innovation.
+														</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="mt-8 flex flex-col text-center md:flex-row md:text-left">
+									<div class="md:w-2/5">
+										<div class="flex justify-center md:justify-start">
+											<span class="shrink-0">
+												<img src="https://valuechainfactory.com/assets/logo.bc698a65.png" class="h-auto w-32" alt="company logo"/>
+											</span>
+											<div class="relative ml-3 hidden w-full md:block">
+												<span
+													class="absolute inset-x-0 top-1/2 h-0.5 -translate-y-1/2 transform bg-grey-70"
+												></span>
+											</div>
+										</div>
+									</div>
+									<div class="md:w-3/5">
+										<div class="relative flex md:pl-18">
+											<span
+												class="absolute left-8 top-1 hidden h-4 w-4 rounded-full border-2 border-grey-40 bg-white md:block"
+											></span>
+											<div class="mt-1 flex">
+												<i class="bx bxs-right-arrow hidden text-primary md:block"></i>
+												<div class="md:-mt-1 md:pl-8">
+													<span class="block font-body font-bold text-grey-40">
+														May 2025 - Present
+													</span>
+													<span
+														class="block pt-2 font-header text-xl font-bold uppercase text-primary"
+													>
+														Software Developer
+													</span>
+													<div class="pt-2">
+														<span class="block font-body text-black">
+    														Building systems to boost trust and efficiency for public institutions using Elixir.
 														</span>
 													</div>
 												</div>
@@ -721,7 +747,7 @@ templ Base() {
 											</div>
 											<div class="pt-5 md:pl-5 md:pt-0">
 												<h1 class="font-body text-2xl font-bold text-primary md:text-4xl">
-													50
+													51+
 												</h1>
 												<h4
 													class="text-grey-dark font-header text-base font-medium leading-loose md:text-xl"
@@ -739,17 +765,17 @@ templ Base() {
 								<h2
 									class="text-center font-header text-4xl font-semibold uppercase text-primary sm:text-5xl lg:text-6xl"
 								>
-									I also like to write
+									articles
 								</h2>
 								<h4 class="pt-6 text-center font-header text-xl font-medium text-black sm:text-2xl lg:text-3xl">
-									Check out my latest posts!
+									My blog posts and insights
 								</h4>
 								<div
 									class="mx-auto grid w-full grid-cols-1 gap-6 pt-12 sm:w-3/4 lg:w-full lg:grid-cols-3 xl:gap-10"
 								>
-									<a href="https://medium.com/@embadi43/from-cache-to-clarity-small-code-fix-big-impact-83ca46a4dd00" class="shadow">
+									<a href="https://medium.com/@embadi43/hlf-cas-short-story-ef659b9c3262" class="shadow">
 										<div
-											style="background-image: url(https://miro.medium.com/v2/resize:fit:720/format:webp/1*VAH7eI2Ynyi6JmdDpo_K-A.jpeg)"
+											style="background-image: url(https://miro.medium.com/v2/resize:fit:720/format:webp/1*jLq6HetLKfZddiU-RztjZw.jpeg)"
 											class="group relative h-72 bg-cover bg-center bg-no-repeat sm:h-84 lg:h-64 xl:h-72"
 										>
 											<span
@@ -763,15 +789,45 @@ templ Base() {
 											</span>
 										</div>
 										<div class="bg-white py-6 px-5 xl:py-8">
+											<span class="block font-body text-sm font-medium text-grey-20">
+												June 11, 2025
+											</span>
 											<span class="block font-body text-lg font-semibold text-black">
-												Debugging Saves the Launch
+												HLF CAs Short Story
 											</span>
 											<span class="block pt-2 font-body text-grey-20">
-												Imagine launching your product that you’ve been preparing 6 months for… then users can’t use because there’s a page that loads forever. Almost like planning a big party then turning away all guests knocking at your door on D-day. This was the...
+												Hyperledger Fabric CAs explain in a short story of building access control in a permission blockchain network. Hyperledger Fabric is a permissioned blockchain used to build DLTs (Decentralized Ledger Technologies). ...
 											</span>
 										</div>
 									</a>
-									<a href="https://medium.com/@embadi43/a9725d14ae35" class="shadow">
+									<a href="https://medium.com/@embadi43/go-vs-python-a-tale-of-two-tools-18167aaa03d5" target="_blank" class="shadow">
+										<div
+											style="background-image: url(https://miro.medium.com/v2/resize:fit:720/format:webp/1*srDwz0LAyoHDTAa38I2Rig.png)"
+											class="group relative h-72 bg-cover bg-center bg-no-repeat sm:h-84 lg:h-64 xl:h-72"
+										>
+											<span
+												class="absolute inset-0 block bg-gradient-to-b from-blog-gradient-from to-blog-gradient-to bg-cover bg-center bg-no-repeat opacity-10 transition-opacity group-hover:opacity-50"
+											></span>
+											<span
+												class="absolute right-0 bottom-0 mr-4 mb-4 block rounded-full border-2 border-white px-6 py-2 text-center font-body text-sm font-bold uppercase text-white md:text-base"
+											>
+												Read
+												More
+											</span>
+										</div>
+										<div class="bg-white py-6 px-5 xl:py-8">
+											<span class="block font-body text-sm font-medium text-grey-20">
+												April 25, 2025
+											</span>
+											<span class="block font-body text-lg font-semibold text-black">
+                                                Go vs Python: A tale of two tools
+											</span>
+											<span class="block pt-2 font-body text-grey-20">
+												Recently, I was exploring new programming languages, like any curious builder would do. In the process, I tried building a full-stack app using the GoTH stack (Go, Tailwind, and HTMX) ...
+											</span>
+										</div>
+									</a>
+									<a href="https://medium.com/@embadi43/how-to-use-jenkins-on-debian-server-a9725d14ae35" target="_blank" class="shadow">
 										<div
 											style="background-image: url(https://miro.medium.com/v2/resize:fit:720/format:webp/1*x5DtsQ-WB6HLnBhMXSXoeQ.png)"
 											class="group relative h-72 bg-cover bg-center bg-no-repeat sm:h-84 lg:h-64 xl:h-72"
@@ -787,37 +843,14 @@ templ Base() {
 											</span>
 										</div>
 										<div class="bg-white py-6 px-5 xl:py-8">
+											<span class="block font-body text-sm font-medium text-grey-20">
+												Dec 25, 2024
+											</span>
 											<span class="block font-body text-lg font-semibold text-black">
-												How to use Jenkins on Debian server
+                                                How to use Jenkins on Debian server
 											</span>
 											<span class="block pt-2 font-body text-grey-20">
-												Jenkins is a popular build automation server that helps you roll out improvements to your web application. Started by Kohsuke Kawaguchi in 2004...
-											</span>
-										</div>
-									</a>
-									<a href="https://medium.com/@embadi43/as-a-team-we-realized-that-wed-like-a-challenge-both-technically-and-practically-so-we-decided-7317f54a01ae" class="shadow">
-										<div
-											style="background-image: url(https://miro.medium.com/v2/resize:fit:1100/format:webp/1*8TWI5AZG7oea5HKTN4zzMg.png)"
-											class="group relative h-72 bg-cover bg-center bg-no-repeat sm:h-84 lg:h-64 xl:h-72"
-										>
-											<span
-												class="absolute inset-0 block bg-gradient-to-b from-blog-gradient-from to-blog-gradient-to bg-cover bg-center bg-no-repeat opacity-10 transition-opacity group-hover:opacity-50"
-											></span>
-											<span
-												class="absolute right-0 bottom-0 mr-4 mb-4 block rounded-full border-2 border-white px-6 py-2 text-center font-body text-sm font-bold uppercase text-white md:text-base"
-											>
-												Read
-												More
-											</span>
-										</div>
-										<div class="bg-white py-6 px-5 xl:py-8">
-											<span class="block font-body text-lg font-semibold text-black">
-                                                Building a BlockChain Voting System with Hyperledger Sawtooth
-											</span>
-											<span class="block pt-2 font-body text-grey-20">
-												In December of 2022, Victor Juma and myself built a voting system using Blockchain for our ALX Project.
-
-												As a team, we realized that we’d wanted a challenge, both technically...
+												Jenkins is a popular build automation server that helps you roll out improvements to your web application. Started by Kohsuke Kawaguchi in 2004, it has grown to become one of the most used build automation servers...
 											</span>
 										</div>
 									</a>
@@ -828,29 +861,29 @@ templ Base() {
 							<h2
 								class="text-center font-header text-4xl font-semibold uppercase text-primary sm:text-5xl lg:text-6xl"
 							>
-								Here's a contact form
+								CONTACT ME
 							</h2>
 							<h4 class="pt-6 text-center font-header text-xl font-medium text-black sm:text-2xl lg:text-3xl">
-								Have Any Questions?
+								Have a project in mind?
 							</h4>
 							<div class="mx-auto w-full pt-5 text-center sm:w-2/3 lg:pt-6">
 								<p class="font-body text-grey-10">
-                                    Reach me on email so we can discuss further.
+                                    Let's talk.
 								</p>
 							</div>
-							<form class="mx-auto w-full pt-10 sm:w-3/4">
+							<form id="contactForm" class="mx-auto w-full pt-10 sm:w-3/4">
 								<div class="flex flex-col md:flex-row">
 									<input
-										class="mr-3 w-full rounded border-grey-50 px-4 py-3 font-body text-black md:w-1/2 lg:mr-5"
-										placeholder="Name"
-										type="text"
-										id="name"
+									class="mr-3 w-full rounded border-grey-50 px-4 py-3 font-body text-black md:w-1/2 lg:mr-5"
+									placeholder="Name"
+									type="text"
+									id="name"
 									/>
 									<input
-										class="mt-6 w-full rounded border-grey-50 px-4 py-3 font-body text-black md:mt-0 md:ml-3 md:w-1/2 lg:ml-5"
-										placeholder="Email"
-										type="text"
-										id="email"
+									class="mt-6 w-full rounded border-grey-50 px-4 py-3 font-body text-black md:mt-0 md:ml-3 md:w-1/2 lg:ml-5"
+									placeholder="Email"
+									type="email"
+									id="email"
 									/>
 								</div>
 								<textarea
@@ -861,12 +894,14 @@ templ Base() {
 									rows="10"
 								></textarea>
 								<button
+									type="submit"
 									class="mt-6 flex items-center justify-center rounded bg-primary px-8 py-3 font-header text-lg font-bold uppercase text-white hover:bg-grey-20"
 								>
 									Send
 									<i class="bx bx-chevron-right relative -right-2 text-3xl"></i>
 								</button>
 							</form>
+
 							<div class="flex flex-col pt-16 lg:flex-row">
 								<div
 									class="w-full border-l-2 border-t-2 border-r-2 border-b-2 border-grey-60 px-6 py-6 sm:py-8 lg:w-1/3"
@@ -944,7 +979,8 @@ templ Base() {
 					<div class="bg-primary">
 						<div class="container flex flex-col justify-between py-6 sm:flex-row">
 							<p class="text-center font-body text-white md:text-left">
-								© Copyright 2024. All right reserved.
+								// Automate with JS the year update
+								© Copyright <span id="currentYear"></span>. All right reserved.
 							</p>
 							<div class="flex items-center justify-center pt-5 pl-2 sm:justify-start sm:pt-0">
                                 <!-- <a href="/">
@@ -962,14 +998,36 @@ templ Base() {
                                 <a href="https://www.linkedin.com/in/elisha-mbadi-4b1693165/" class="pl-4">
                                     <i class="bx bxl-linkedin text-2xl text-white hover:text-yellow"></i>
                                 </a>
-                                <a href="https://www.instagram.com/eli_mbadi/" class="pl-4">
-                                    <i class="bx bxl-instagram text-2xl text-white hover:text-yellow"></i>
-                                </a>
                             </div>
 						</div>
 					</div>
 				</div>
-				<script src="/assets/js/main.js"></script>
+				<script>
+					document.getElementById("contactForm").addEventListener("submit", function(e) {
+						e.preventDefault(); // prevent page reload
+
+						const name = document.getElementById("name").value.trim();
+						const email = document.getElementById("email").value.trim();
+						const message = document.getElementById("message").value.trim();
+
+						if (!name || !email || !message) {
+							alert("Please fill in all fields.");
+							return;
+						}
+
+						const subject = encodeURIComponent(`New message from ${name}`);
+						const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`);
+
+						// Replace with your email
+						const mailtoLink = `mailto:embadi43@gmail.com?subject=${subject}&body=${body}`;
+
+						window.location.href = mailtoLink;
+					});
+
+					// Set current year in footer
+					date = new Date().getFullYear();
+					document.getElementById("currentYear").textContent = date;
+				</script>
 			</div>
 		</body>
 	</html>

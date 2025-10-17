@@ -1,0 +1,16 @@
+version: "3.9"
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: elimbadi_app
+    ports:
+      - "8000:8000"
+    environment:
+      - PORT=8000
+      - ENV=production
+    volumes:
+      - .:/app
+    restart: unless-stopped
